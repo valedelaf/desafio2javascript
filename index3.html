@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Ingresa el password </h2>
+    <select id="select1">
+        <option> 1 </option>
+        <option> 2 </option>
+        <option> 3 </option>
+        <option> 4 </option>
+        <option> 5 </option>
+        <option> 6 </option>
+        <option> 7 </option>
+        <option> 8 </option>
+        <option> 9 </option>
+    </select>
+    <select id="select2">
+        <option> 1 </option>
+        <option> 2 </option>
+        <option> 3 </option>
+        <option> 4 </option>
+        <option> 5 </option>
+        <option> 6 </option>
+        <option> 7 </option>
+        <option> 8 </option>
+        <option> 9 </option>
+    </select>
+    <select id="select3">
+        <option> 1 </option>
+        <option> 2 </option>
+        <option> 3 </option>
+        <option> 4 </option>
+        <option> 5 </option>
+        <option> 6 </option>
+        <option> 7 </option>
+        <option> 8 </option>
+        <option> 9 </option>
+    </select>
+    <button id="ingresar" onclick="
+   let select1= document.querySelector('#select1').value;
+   let select2= document.querySelector('#select2').value;
+   let select3= document.querySelector('#select3').value;
+   let passwordingresada = select1 + select2 + select3;
+    if (passwordingresada === '911'){
+ par= document.querySelector('#mensaje');
+ par.innerHTML = 'Password 1 correcto';
+    }
+else if (passwordingresada === '714'){
+par.innerHTML = 'Password 2 es correcto';
+ }
+ else{
+par.innerHTML = 'Password incorrecto';
+ }
+"> Ingresar </button>
+    <p id="mensaje"> </p>
+</body>
+</html>
